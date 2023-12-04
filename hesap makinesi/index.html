@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hesap Makinesi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hesapMakinesi">
+        <input type="text" id="ekran" disabled>
+        <div class="dugmeler">
+            <button onclick="ekraniTemizle()">C</button>
+            <button onclick="sayiEkle(7)">7</button>
+            <button onclick="sayiEkle(8)">8</button>
+            <button onclick="sayiEkle(9)">9</button>
+            <button onclick="operatorSec('/')">/</button>
+
+            <button onclick="sayiEkle(4)">4</button>
+            <button onclick="sayiEkle(5)">5</button>
+            <button onclick="sayiEkle(6)">6</button>
+            <button onclick="operatorSec('*')">*</button>
+
+            <button onclick="sayiEkle(1)">1</button>
+            <button onclick="sayiEkle(2)">2</button>
+            <button onclick="sayiEkle(3)">3</button>
+            <button onclick="operatorSec('-')">-</button>
+
+            <button onclick="sayiEkle(0)">0</button>
+            <button onclick="calculate()">=</button>
+            <button onclick="operatorSec('+')">+</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
